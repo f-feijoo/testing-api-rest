@@ -1,0 +1,36 @@
+{
+  "name": "testing-api-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "node src/loggers/benchmark.js",
+    "start": "node src/server.js",
+    "cluster": "node src/server.js --p 8080 --m CLUSTER",
+    "fork": "node src/server.js --p 8080 --m FORK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-feijoo/testing-api-rest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f-feijoo/testing-api-rest/issues"
+  },
+  "homepage": "https://github.com/f-feijoo/testing-api-rest#readme",
+  "dependencies": {
+    "autocannon": "^7.9.0",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "log4js": "^6.6.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.4.1",
+    "yargs": "^17.5.1"
+  }
+}
